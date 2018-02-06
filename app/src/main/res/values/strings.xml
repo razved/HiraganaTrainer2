@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Hiragana Trainer</string>
+    <string name="answer">Answer</string>
+    <string name="hiragana">A</string>
+    <string name="your_answer">Your answer:</string>
+    <string name="zero">0</string>
+    <string name="randRow">randRow</string>
+    <string name="randLine">randLine</string>
+    <string name="rightAnswers">rightAnswers</string>
+    <string name="falseAnswers">falseAnswers</string>
+    <string name="step">step</string>
+    <string name="answersArray">answersArray</string>
+    <string name="winMessage">You win!</string>
+    <string name="looseMessage">You loose!</string>
+    <string name="newGameButton">NEW GAME</string>
+    <string name="answerButton">Answer</string>
+</resources>

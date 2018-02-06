@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.hiraganatrainer.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/rightAnswersCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/marginLeft24"
+                android:text="@string/zero"
+                android:textColor="@color/greenColor"
+                android:textSize="@dimen/scoreTextSize" />
+
+
+            <TextView
+                android:id="@+id/falseAnswersCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/marginRight"
+                android:text="@string/zero"
+                android:textColor="@color/redColor"
+                android:textSize="@dimen/scoreTextSize" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/hiraganaNowQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/hiragana"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/hiraganaTextSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_answer"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/answersGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginLeft"
+            android:orientation="vertical"
+            android:theme="@style/MyRadioButton">
+
+            <RadioButton
+                android:id="@+id/firstAnswerRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:text=""
+                android:textAllCaps="true"
+                android:textSize="@dimen/textRadioButtonSize" />
+
+            <RadioButton
+                android:id="@+id/secondAnswerRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:text=""
+                android:textAllCaps="true"
+                android:textSize="@dimen/textRadioButtonSize" />
+
+            <RadioButton
+                android:id="@+id/thirdAnswerRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text=""
+                android:textAllCaps="true"
+                android:textSize="@dimen/textRadioButtonSize" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/answerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:onClick="answerButtonClick"
+            android:text="@string/answer" />
+    </LinearLayout>
+</ScrollView>

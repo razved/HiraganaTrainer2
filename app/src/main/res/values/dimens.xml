@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginLeft">16dp</dimen>
+    <dimen name="marginTop">12dp</dimen>
+    <dimen name="textRadioButtonSize">28sp</dimen>
+    <dimen name="hiraganaTextSize">72sp</dimen>
+    <dimen name="scoreTextSize">36sp</dimen>
+    <dimen name="marginRight">24dp</dimen>
+    <dimen name="marginLeft24">24dp</dimen>
+</resources>
